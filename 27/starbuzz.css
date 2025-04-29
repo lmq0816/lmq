@@ -108,15 +108,6 @@ div.left-header {
   height: 100px;
   animation: rotate 2s linear infinite; 
 }
-@keyframes rotate {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
 .coupon { 
 	position: fixed; 
 	top: 350px; 
@@ -130,3 +121,13 @@ div.left-header {
 .coupon a, img{
 	border: none;
 }
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
