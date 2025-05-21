@@ -49,12 +49,4 @@ body {
     font-size: 1.2rem; /* 统一字体大小 */
     border-bottom: 1px solid #e2e6ea;
 }
-.new-sub {
-  font-size: 0.875rem;
-  padding: 0 15px 15px;
-  display: block;
-  color: #7f8c8d;
-  border-bottom: 1px dashed #ccc; 
-  padding-bottom: 10px;
-}
 
