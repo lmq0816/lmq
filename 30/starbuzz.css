@@ -31,11 +31,13 @@ body {
 
 .new-sub {
   font-size: 0.875rem;
-  padding: 0 15px 15px;
+  /* 移除左右内边距以实现顶格，缩小底部内边距 */
+  padding: 0 0 10px; 
   display: block;
-  color: #7f8c8d;
-  border-bottom: 1px dashed #ccc; 
-  padding-bottom: 10px;
+  color: #555; 
+  border-bottom: 1px dashed #666; 
+  /* 进一步缩小底部内边距 */
+  padding-bottom: 5px; 
 }
 
 h1{
