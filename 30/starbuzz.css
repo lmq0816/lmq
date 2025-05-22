@@ -1,10 +1,3 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-/* 全局 body 样式 */
 body {
   font-family: 'Noto Sans KR', sans-serif;
   margin: 0;
@@ -15,41 +8,44 @@ body {
 
 .news-container {
   display: grid;
+  /* 设置每行有四个等宽的列 */
   grid-template-columns: repeat(4, 1fr); 
-  gap: 50px; 
-  padding: 20px;
+  gap: 50px; /* 增大间距，从 30px 调整为 50px */
+  padding: 20px 0; 
   max-width: 1200px;
   margin: 0 auto;
 }
 
 
 .news-container img {
-  width: 100%;
-  height: 200px;
+  /* 让图片宽度适应网格项 */
+  width: 100%; 
   display: block;
+  margin-bottom: 10px; 
 }
 
-<<<<<<< HEAD
+.new-title {
+  /* 若上面的 margin-bottom 不够，也可增加上外边距 */ 
+  font-size: 1rem; 
+  color: #000; 
+  font-weight: bold; 
+  letter-spacing: -0.05em; 
+  line-height: 1.2;
+}
 .new-sub {
+  /* 进一步缩小上外边距 */
+  margin-top: 15px; 
+  /* 进一步缩小下外边距 */
+  margin-bottom: 5px; 
   font-size: 0.875rem;
   /* 移除左右内边距以实现顶格，缩小底部内边距 */
   padding: 0 0 10px; 
   display: block;
-  color: #555; 
-  border-bottom: 1px dashed #666; 
+  color: rgb(102,102,102); 
+  border-bottom: 1px dashed rgb(192,192,192); 
   /* 进一步缩小底部内边距 */
-  padding-bottom: 5px; 
+  padding-bottom: 25px; 
 }
-=======
-.new-title {
-  font-size: 1.125rem;
-  font-weight: bold;
-  padding: 15px 15px 0;
-  display: block;
-  color: #2c3e50;
-}
-
->>>>>>> adbd96398ceabab8664441ccd092c18d2db06d89
 
 h1{
   font-size: 1rem; 
@@ -57,28 +53,3 @@ h1{
   margin-bottom: 10px; /* 底部间距 */
   font-weight: bold; /* 加粗 */
 }
-.new-title {
-  font-size: 1rem; /* 增大字体大小，可按需调整值 */
-  color: #000; /* 设置字体颜色为黑色 */
-  font-weight: bold; /* 设置字体加粗 */
-  letter-spacing: -0.05em; /* 缩小字体间距，可根据需要调整值 */
-}
-
-<<<<<<< HEAD
-=======
-.news-container h1,
-.news-container h2,
-.news-container h3,
-.news-container h4,
-.news-container h5,
-.news-container h6,
-.news-container h7,
-.news-container h8 {
-    margin: 0;
-    padding: 15px;
-    background-color: #f8f9fa;
-    font-size: 1.2rem; /* 统一字体大小 */
-    border-bottom: 1px solid #e2e6ea;
-}
->>>>>>> adbd96398ceabab8664441ccd092c18d2db06d89
-
