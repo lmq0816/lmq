@@ -1,0 +1,97 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* 导航栏容器样式 */
+.navigation-header-gnb {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 240px; /* 导航栏宽度 */
+  background-color: #003D7D; 
+  overflow-y: auto; /* 允许垂直滚动 */
+  z-index: 1000;
+}
+
+/* 一级导航栏样式 */
+.navigation-gnb-d1-list {
+  list-style-type: none; /* 移除列表项的默认样式 */
+  padding: 0;
+  position: relative;
+}
+
+.navigation-gnb-d1-link {
+  display: block;
+  padding: 15px 20px;
+  color: #003D7D;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.navigation-gnb-d1-link:hover {
+  color: white;
+  background-color: #003D7D;
+}
+
+/* 隐藏二级、三级和四级导航栏 */
+.navigation-gnb-d2-list,
+.navigation-gnb-d2-list ul {
+  display: none;
+  list-style-type: none;
+  padding-left: 0;
+  position: absolute;
+  left: 100%;
+  top: 0;
+  background-color: white;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  min-width: 200px;
+  /* 添加过渡效果 */
+  opacity: 0;
+  transform: translateX(-10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* 鼠标悬停在一级导航栏时显示二级导航栏 */
+.navigation-gnb-d1-list:hover .navigation-gnb-d2-list {
+  display: block;
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* 鼠标悬停在二级导航栏时显示三级导航栏 */
+.navigation-gnb-d2-titlegroup:hover > ul {
+  display: block;
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* 二级、三级和四级导航栏链接样式 */
+.navigation-gnb-d2-title,
+.navigation-gnb-d2-sub {
+  display: block;
+  padding: 12px 20px;
+  color: #003D7D;
+  text-decoration: none;
+  transition: color 0.3s, background-color 0.3s;
+}
+
+.navigation-gnb-d2-title:hover,
+.navigation-gnb-d2-sub:hover {
+  color: white;
+  background-color: #003D7D;
+}
+
+/* 隐藏类样式 */
+.blind {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+  
