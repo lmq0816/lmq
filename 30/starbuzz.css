@@ -46,10 +46,3 @@ body {
   /* 进一步缩小底部内边距 */
   padding-bottom: 25px; 
 }
-
-h1{
-  font-size: 1rem; 
-  color: #1b3b86; /* 将文字颜色设置为更深的蓝色 */
-  margin-bottom: 10px; /* 底部间距 */
-  font-weight: bold; /* 加粗 */
-}
